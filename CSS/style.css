@@ -1,0 +1,41 @@
+/* GOOGLE FONTS ADDED */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "Lobster", cursive;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+:root {
+  --clr-primary-1: #fee4e3;
+  --clr-primary-2: #fdc9c6;
+  --clr-primary-3: #fca6a1;
+  --clr-primary-4: #fa7971;
+  --clr-primary-5: #f8554b;
+  --clr-primary-6: #ba3932;
+  --clr-primary-7: #882a24;
+  --clr-primary-8: #4a1714;
+  --clr-primary-9: #190807;
+  --transition-linear: all 0.3s linear;
+  --transition-ease: all 0.3s ease-in-out;
+}
+/* HERO */
+
+/* END OF HERO */
