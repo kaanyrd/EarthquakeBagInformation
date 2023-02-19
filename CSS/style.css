@@ -24,7 +24,7 @@ img {
   display: block;
 }
 :root {
-  --clr-primary-1: #fee4e3;
+  --clr-primary-1: #fae5e5;
   --clr-primary-2: #fdc9c6;
   --clr-primary-3: #fca6a1;
   --clr-primary-4: #fa7971;
@@ -37,5 +37,220 @@ img {
   --transition-ease: all 0.3s ease-in-out;
 }
 /* HERO */
-
+.hero {
+  min-height: 100vh;
+  background-color: white;
+}
+.hero-center {
+  max-width: 1170px;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 1.5rem 0 5rem 0;
+}
+.main-title {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--clr-primary-8);
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+.underline {
+  width: 12rem;
+  height: 5px;
+  margin: 0 auto 2rem auto;
+  background-color: var(--clr-primary-7);
+  border-radius: 10px;
+}
+.main-text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.main-img-container {
+  margin: 2rem auto 0 auto;
+  border-radius: 10px;
+  max-width: 42rem;
+}
+.main-img {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  /* object-fit: contain; */
+}
+@media screen and (min-width: 992px) {
+  .main-img-container {
+    max-width: 47rem;
+  }
+}
 /* END OF HERO */
+/* ITEMS */
+.items {
+  padding: 5rem 0;
+  background-color: #f1f5f8;
+}
+.items-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.7rem;
+}
+.items-info-center {
+  max-width: 1170px;
+  width: 90vw;
+  margin: 0 auto 0 auto;
+}
+.items-underline {
+  width: 12rem;
+  height: 5px;
+  margin: 0 auto 2rem auto;
+  background-color: black;
+  border-radius: 10px;
+}
+.items-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.items-center {
+  max-width: 1170px;
+  width: 90vw;
+  margin: 0 auto;
+}
+.stars {
+  /* border: 3px solid black; */
+  /* border: 3px solid black; */
+  display: inline-block;
+  /* column-gap: 1rem; */
+  margin-bottom: 5rem;
+}
+.star {
+  /* border: 3px solid red; */
+  display: inline-block;
+  font-size: 3rem;
+  color: #f9d71c;
+  /* color: var(--clr-primary-5); */
+  transition: var(--transition-ease);
+  cursor: pointer;
+}
+.stars:hover .star {
+  transform: translateX(10px);
+  color: orange;
+}
+.stars:hover .stars-underline {
+  width: 25rem;
+  transform: translateX(20px);
+  color: black;
+}
+.stars-underline {
+  width: 12rem;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+}
+.stars-underline-2 {
+  width: 12rem;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.img-item-container {
+  height: 22rem;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+}
+.img-item {
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: var(--transition-ease);
+}
+.item {
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3rem;
+  cursor: pointer;
+  /* border: 3px solid black; */
+  transition: var(--transition-linear);
+}
+.item:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.item-info {
+  background: orange;
+  color: white;
+  transition: var(--transition-ease);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.item-title {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.item-continue {
+  text-transform: capitalize;
+}
+
+.item:hover .img-item {
+  transform: scale(1.05);
+}
+.item:hover .item-info {
+  background: red;
+}
+.stars-title {
+  max-width: 1170px;
+  width: 90vw;
+  margin: 3rem auto 0 auto;
+}
+.star-title {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    /* padding: 1rem 0; */
+  }
+  .main-title {
+    font-size: 3rem;
+  }
+  .star-title {
+    font-size: 2rem;
+  }
+  .item {
+    margin-bottom: 0;
+  }
+  .stars {
+    margin-bottom: 1rem;
+  }
+  .five-stars,
+  .four-stars,
+  .three-stars,
+  .two-stars,
+  .one-stars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 2rem;
+  }
+  .star-title {
+    margin-top: 9rem;
+  }
+  .stars {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .five-stars,
+  .four-stars,
+  .three-stars,
+  .two-stars,
+  .one-stars {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* END OF ITEMS */
+/* NAVBAR */
+/* FIXME */
+/* END OF NAVBAR */
