@@ -323,7 +323,7 @@ img {
 }
 /* END OF NAVBAR */
 /* BACKGROUND */
-.bg {
+.deneme {
   position: fixed;
   top: 0;
   left: 0;
@@ -358,7 +358,14 @@ img {
   cursor: pointer;
   /* padding: 0.1rem 0.4rem; */
 }
+.fa-xmark:hover {
+  color: white;
+  background-color: red;
+}
 .fa-solid:hover {
+  /* transform: scale(1.1); */
+  /* background-color: red; */
+  /* color: white; */
 }
 .card {
   border: 3px solid black;
@@ -400,8 +407,8 @@ img {
   }
 }
 /* #card-1 {
-}
-*/
+  display: block;
+} */
 
 /* display: block; */
 .hidden {

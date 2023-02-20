@@ -1,12 +1,44 @@
 "use strict";
+const item = document.querySelectorAll(".item");
+const card = document.querySelectorAll(".card");
+const backGround = document.querySelector("#bg");
+const closeBtn = document.querySelectorAll(".fa-xmark");
 
-// const closeBtn = document.getElementById("close-btn");
-// const item = document.getElementsByClassName("item");
-// const card = document.getElementsByClassName("card");
-// let bg = document.getElementsByClassName("bg");
+for (let i = 0; i < item.length; i++) {
+  item[i].addEventListener("click", function () {
+    card[i].classList.remove("hidden");
+    backGround.classList.add("deneme");
+  });
+}
 
-// for (let i = 0; i < item.length; i++) {
-//   item[i].addEventListener("click", () => {
-//     console.log(item[i]);
-//   });
-// }
+for (let i = 0; i < card.length; i++) {
+  card[i].addEventListener("click", function () {
+    card[i].classList.add("hidden");
+    backGround.classList.remove("deneme");
+  });
+}
+
+for (let i = 0; i < closeBtn.length; i++) {
+  closeBtn[i].addEventListener("click", function () {
+    for (let j = 0; j < card.length; j++) {
+      card[j].classList.add("hidden");
+    }
+    backGround.classList.add("deneme");
+  });
+}
+
+backGround.addEventListener("click", function () {
+  for (let i = 0; i < card.length; i++) {
+    card[i].classList.add("hidden");
+  }
+  backGround.classList.add("deneme");
+});
+
+document.addEventListener("keydown", function (ev) {
+  if (ev.key === "Escape") {
+    for (let i = 0; i < card.length; i++) {
+      card[i].classList.add("hidden");
+    }
+    backGround.classList.add("deneme");
+  }
+});
