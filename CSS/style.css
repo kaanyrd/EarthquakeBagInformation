@@ -463,7 +463,7 @@ p {
 }
 @media screen and (max-width: 576px) {
   .card-info-img-container {
-    height: 15rem;
+    height: 10rem;
   }
 }
 /* #card-1 {
