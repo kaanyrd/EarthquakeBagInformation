@@ -461,6 +461,11 @@ p {
     padding: 1rem 0;
   }
 }
+@media screen and (min-width: 576px) {
+  .card-info-img-container {
+    height: 15rem;
+  }
+}
 /* #card-1 {
   display: block;
 } */
