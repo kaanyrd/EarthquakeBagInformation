@@ -11,19 +11,12 @@ for (let i = 0; i < item.length; i++) {
   });
 }
 
-for (let i = 0; i < card.length; i++) {
-  card[i].addEventListener("click", function () {
-    card[i].classList.add("hidden");
-    backGround.classList.remove("deneme");
-  });
-}
-
 for (let i = 0; i < closeBtn.length; i++) {
   closeBtn[i].addEventListener("click", function () {
     for (let j = 0; j < card.length; j++) {
       card[j].classList.add("hidden");
     }
-    backGround.classList.add("deneme");
+    backGround.classList.remove("deneme");
   });
 }
 
@@ -31,14 +24,21 @@ backGround.addEventListener("click", function () {
   for (let i = 0; i < card.length; i++) {
     card[i].classList.add("hidden");
   }
-  backGround.classList.add("deneme");
+  backGround.classList.remove("deneme");
 });
 
 document.addEventListener("keydown", function (ev) {
   if (ev.key === "Escape") {
     for (let i = 0; i < card.length; i++) {
       card[i].classList.add("hidden");
+      card.style.transition = "all .3s linear";
     }
-    backGround.classList.add("deneme");
+    backGround.classList.remove("deneme");
   }
 });
+// for (let i = 0; i < card.length; i++) {
+//   card[i].addEventListener("click", function () {
+//     card[i].classList.add("hidden");
+//     backGround.classList.remove("deneme");
+//   });
+// }
