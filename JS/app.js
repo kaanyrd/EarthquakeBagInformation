@@ -27,11 +27,10 @@ backGround.addEventListener("click", function () {
   backGround.classList.remove("deneme");
 });
 
-document.addEventListener("keydown", function (ev) {
-  if (ev.key === "Escape") {
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
     for (let i = 0; i < card.length; i++) {
       card[i].classList.add("hidden");
-      card.style.transition = "all .3s linear";
     }
     backGround.classList.remove("deneme");
   }
