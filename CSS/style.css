@@ -208,6 +208,7 @@ p {
 }
 .img-item {
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -324,6 +325,7 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 .footer-link {
@@ -445,6 +447,7 @@ p {
 .card-info-img {
   border-radius: 15px;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .card-info {
